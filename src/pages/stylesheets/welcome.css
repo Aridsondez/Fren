@@ -1,0 +1,333 @@
+.background{
+    width: 100vw;
+
+}
+
+.options{
+    overscroll-behavior: none;
+    color: black;
+    width: calc(100vw*50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 227px;
+    position: relative;
+}
+.menu-options{
+    padding-top:5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.menu-options a{
+    position: relative;
+    width: 180px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    background-color: #527d8969;
+    color:white;
+    font-size: larger;
+}
+.menu-result{
+    position: relative;
+    top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.buy-menu{
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    background-color: white;
+    display: inline-block;
+    width: 730px;
+    height: 200px;
+}
+.typeBuy{
+    width: 100%;
+    height: 50px;
+    right: 20px;
+    border-bottom: 1px solid;
+    border-color: #527d8949;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.typeBuy a{
+    left: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+.byMake{
+    display: flex;
+    justify-content: center;
+}
+
+.buychoice{
+    cursor: pointer;
+}
+.buychoice:hover{
+    text-decoration: underline;
+}
+.car-model-pick{
+    margin-top: 13px;
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.Search{
+    border-style: none;
+    background-color:#527d89c0;
+    width: 140px;
+}
+
+.zipCode{
+    margin-left: 10px;
+    font-size: 14px;
+    
+}
+.zippy{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Search{
+    cursor: pointer;
+    height: 40px;
+    position:absolute;
+    top: 120px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+.bybody-style{
+    overflow-wrap: break-word;
+    height: 150px;
+    display: flex;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: space-evenly;
+    border-radius: 3px solid black;
+    overflow-wrap: break-word;
+}
+.cars-picture:hover{
+    background-color: #527d8969;
+}
+.byPrice{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cars-picture{
+    cursor: pointer;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: small;
+    width: 100px;
+    height:100px;
+}
+
+
+.cars-picture:hover{
+    border-style: dashed;
+}
+
+.cars-picture img{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.menu-height{
+    height: 300px;
+}
+
+.byPrice{
+    display: flex;
+    align-items: center;
+}
+.pricingmenudrop{
+    width: 120px;
+    height: 50px;
+}
+
+.describe{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.describing{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.by-price-zip-code{
+    margin: 0;
+    width:  120px;
+    height: 44px;    
+}
+
+.searchbyprice{
+    cursor: pointer;
+    background-color:#527d89c2;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white;
+    border-style: none;
+}
+
+.finance-desc{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: medium;
+    font-weight: bolder;
+    height: 100px;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.learn-more{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.learn-more:hover{
+    color: #527d89d3;
+}
+.logo{
+    width: 100px;
+    border-radius: 50px;
+}
+.shopping-for-cars{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ai-chatbot{
+    cursor: pointer;
+    width: 55px;
+}
+.ai-chatbot:hover{
+    border-style: solid;
+    border-color: #527d89d9;
+    border-radius: 30px;
+    box-shadow: inset;
+}
+
+.finance-descs{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+
+
+@media only screen and (max-width: 942px){
+    .options{
+        width: 100vw;
+        height: 320px;
+    }
+    .menu-result{
+        margin: auto;
+        width: calc(100vw - 20px);
+        border-radius: 10px;
+        display: flex;
+        height: 100%;
+    }
+    .buy-menu{
+        height: 100%;
+        width: 100%;
+    }
+    .finance-desc{
+        font-size: 2.3vw;
+    }
+    .finance-descs{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .learn-more{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+    }
+    .finance-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .buychoice{
+        display: flex;
+        justify-content: center;
+    }
+    .typeBuy{
+        right: 0;
+    }
+    .typeBuy a{
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+    }
+    .typeBuy a:hover{
+        background-color: grey;
+        width: 110px;
+        height: 30px;
+        border-radius: 20px;
+
+    }
+    .describe{
+        margin-top: 0px;
+    }
+    .byMake{
+        display: flex;
+    }
+    .zipCode{
+        display: none;
+    }
+    .byPrice{
+        display: flex;
+        flex-direction: column;
+    }
+    .price-p{
+        display:none;
+    }
+    .zip-input{
+        display: none;
+    }
+    .searchbyprice{
+        margin-top: 10px;
+        height: 30px;
+    }
+    .cars-picture{
+        width: 80px;
+    }
+    .finace-desc-mobile{
+        font-size: small;
+    }
+    .signin{
+        width: 90px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 10px;
+    }
+}

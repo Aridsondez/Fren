@@ -1,0 +1,152 @@
+.header{
+    background-color: white;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    height: 65px;
+    border-bottom-style:solid;
+    border-style: none;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+
+
+}
+.left-header{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    display: flex;
+    gap:40px;
+    left: 20px;
+
+
+}
+.left-header a{
+    cursor: pointer;
+}
+
+.right-header{
+
+    position: inherit;
+    display: flex;
+    gap: 40px;
+    right: 20px;
+}
+
+.signin{
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(117, 117, 203);
+    color:rgb(117, 117, 203);
+    width: 180px;
+}
+
+.signin:hover{
+    background-color: rgba(184, 184, 219, 0.461);
+}
+.name-of-website{
+    cursor: pointer;
+    margin-top: 15px;
+    width: 150px;
+    height: 49px;
+    object-fit: cover;
+}
+.buy-logo{
+    color: blue;
+    text-decoration: none;
+    font-size: calc(10px + 2vmin);
+}
+.mobile-header{
+    display:none;
+}
+
+@media only screen and (max-width: 942px) {
+    /* For mobile phones: */
+    .right-header{
+        cursor: pointer;
+        font-size: medium;
+        color: black;
+    }
+    .name-of-website{
+        width: 50px;
+        border-radius: 0px;
+    }
+    .left-header a{
+        font-size: medium;
+        color: black;
+    }
+    .signin{
+        width: 70px;
+    }
+    .mobile-header{
+        background-color: white;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        height: 65px;
+        border-bottom-style:solid;
+        border-style: none;
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+    }
+    .header{
+        display: none;
+    }
+    .mobile-header-side-bar{
+
+        width: 110px;
+        background-color: blue;
+        color: white;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(20, 36, 118));  
+        height: 100vh;
+        z-index: 100;
+        animation: sidebar ease-out 0.5s;
+    }
+    .mobile-header-icon{
+        margin-top: 10px;
+
+        font-size: larger;
+    }
+
+    .header-options{
+        text-decoration: none;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: larger;
+        transition: ease-in;
+    }
+    .saved-cars{
+        color: brown;
+        border-style: solid;
+        border-top-width: 1px;
+        border-right-style: none;
+        border-left-style: none;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    @keyframes sidebar {
+        from{right: -100px;}
+        to{right: 0px;}
+    }
+
+
+}
