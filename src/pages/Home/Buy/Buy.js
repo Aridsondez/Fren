@@ -311,7 +311,8 @@ const MobileSearch = () =>{
 
 
     const [pricingDropDown, setPricingDropDown] = useState(false)
-    
+
+    const [filterDropDown, setFilterDropDown] = useState(false)
     function handlePriceDropDown(){
         if(pricingDropDown){
             setPricingDropDown(false)
@@ -321,10 +322,18 @@ const MobileSearch = () =>{
         
     }
     
+    function handleFilterDropDown(){
+        if(filterDropDown){
+            setFilterDropDown(false)
+        }else{
+            setFilterDropDown(true)
+        }
+    }
+    
 
     return(
         <div className="mobile-search">
-            <div className="all-filters"><p>Filters</p><i class="fa-solid fa-filter"></i></div>
+            <div className="all-filters" onClick={handleFilterDropDown}><p>Filters</p><i class="fa-solid fa-filter"></i></div>
             <div id="prices" className="mobile-prices" onClick={handlePriceDropDown}>
             <p>{pricingDropDown ? "Exit Price" : "Price"}</p>
            
