@@ -66,16 +66,18 @@ const BuyMenu=(props)=>{
         }
 
         function handleMakeChanges(e){
-            const make = e.target.value
+            const make = e.target.options[e.target.selectedIndex].textContent
+            setMake(e.target.value);
+            localStorage.setItem("make", make)
             localStorage.removeItem("model")
-            localStorage.setItem("makeVal", make)
-            setModel(e.target.value)
+            localStorage.setItem("makeVal", e.target.value)
         }
 
         function handleModelChanges(e){
-
-            const model = e.target.value
-            localStorage.setItem("modelVal", model)
+            const model = e.target.options[e.target.selectedIndex].textContent
+            setModel(e.target.value);
+            localStorage.setItem("model", model)
+            localStorage.setItem("modelVal", e.target.value)
 
         }
         return (
@@ -83,7 +85,7 @@ const BuyMenu=(props)=>{
 
             
                 <div className="make">
-                    <select className="car-model-pick" value={model} onChange={(e)=>handleMakeChanges(e)}>
+                    <select className="car-model-pick" value={make} onChange={(e)=>handleMakeChanges(e)}>
                         <Popularmakes/>
                         <AllMakes/>
                     </select>
@@ -92,8 +94,8 @@ const BuyMenu=(props)=>{
 
 
                 <div className="model">
-                    <select className="car-model-pick" onChange={(e)=>handleModelChanges(e)}>
-                        <Models make={model}/>
+                    <select className="car-model-pick" value={model} onChange={(e)=>handleModelChanges(e)}>
+                        <Models make={make}/>
                     </select>
                 </div>
 

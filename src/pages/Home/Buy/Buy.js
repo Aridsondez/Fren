@@ -177,7 +177,7 @@ const ByCar = ({setqueryMake, setqueryModel}) =>{
         const make = e.target.options[e.target.selectedIndex].textContent
         setMake( e.target.value);
         setqueryMake(e.target.value)
-        localStorage.setItem("make",make)
+        localStorage.setItem("make", make)
         localStorage.removeItem("model")
         localStorage.setItem("makeVal", e.target.value)
 
